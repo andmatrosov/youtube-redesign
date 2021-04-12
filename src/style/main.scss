@@ -5,7 +5,11 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 button:focus,
@@ -20,6 +24,7 @@ input:focus {
   padding-bottom: 20px;
   padding-left: 32px;
   padding-right: 70px;
+  margin-bottom: 30px;
 }
 
 .menu {
@@ -62,6 +67,7 @@ input:focus {
     background-color: transparent;
     border: none;
     padding: 12px 23px;
+    width: 100%;
   }
   &-btn {
     width: 19px;
@@ -101,5 +107,68 @@ input:focus {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+}
+
+.sidebar {
+  padding-left: 32px;
+}
+
+.nav {
+  &-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+
+  &-menu {
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-left: 0;
+    list-style: none;
+  }
+  &-item {
+    margin-bottom: 28px;
+
+    .icon {
+      fill: #898989;
+    }
+    &:hover {
+      color: #ff0000;
+      .icon {
+        fill: #ff0000;
+      }
+      .nav-link {
+        color: #ff0000;
+      }
+    }
+  }
+  &-link {
+    display: block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #898989;
+  }
+  &-icon {
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+  }
+  &-img {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
   }
 }
