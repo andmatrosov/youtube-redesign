@@ -25,6 +25,11 @@ input:focus {
   padding-left: 32px;
   padding-right: 70px;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
 .menu-button {
@@ -107,6 +112,26 @@ input:focus {
 
 .sidebar {
   padding-left: 32px;
+  position: fixed;
+  left: 0;
+  height: calc(100% - 114px);
+  top: 114px;
+  overflow-y: auto;
+  width: 14%;
+  -ms-overflow-style: none;
+  background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 85px;
+  padding-left: 14%;
+  padding-top: 30px;
 }
 
 .nav-title {
@@ -162,5 +187,104 @@ input:focus {
 .nav-img img {
   width: 100%;
   border-radius: 50%;
+}
+
+.channel {
+  position: relative;
+}
+.channel-title {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #19202c;
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.channel-buttons {
+  position: absolute;
+  right: 10%;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+.channel-button {
+  cursor: pointer;
+}
+.channel-button:focus {
+  outline: none;
+}
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel-text {
+  margin-left: 20px;
+}
+.channel-slide {
+  width: 250px;
+  margin: 0 40px;
+}
+
+.video-card {
+  width: 250px;
+}
+.video-thumb {
+  width: 250px;
+  height: 150px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+.video-duration {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+.video-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #19202c;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c2c2c2;
+  font-size: 13px;
+  line-height: 16px;
+}
+.video-views {
+  margin-right: 5px;
+}
+.video-views::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center 70%;
 }
 /*# sourceMappingURL=main.css.map */
